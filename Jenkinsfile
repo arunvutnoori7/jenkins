@@ -9,7 +9,7 @@ pipeline {
 
     stage('npm') {
       steps {
-        sh 'npm i'
+        sh 'npm i --force'
       }
     }
 
