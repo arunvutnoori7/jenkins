@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('npm') {
+      steps {
+        sh 'npm i && npm start'
+      }
+    }
+
   }
 }
