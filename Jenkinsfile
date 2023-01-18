@@ -9,7 +9,13 @@ pipeline {
 
     stage('npm') {
       steps {
-        sh 'npm i && npm start'
+        sh 'npm i'
+      }
+    }
+
+    stage('build') {
+      steps {
+        sh 'npm start'
       }
     }
 
